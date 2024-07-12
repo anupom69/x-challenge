@@ -7,7 +7,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.225,
     },
   },
 };
@@ -22,6 +22,10 @@ export default function page() {
     <motion.section
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 0.15,
+        ease: "easeInOut"
+      }}
       className="mb-14 text-center px-4 container mx-auto max-w-6xl"
     >
       <h2 className="text-[#00203F] font-[600] text-4xl tracking-[1.2px] leading-snug">
