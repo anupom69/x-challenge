@@ -19,7 +19,7 @@ const itemVariants = {
 
 export default function page() {
   return (
-    <motion.section className="mb-14 text-center px-4 container mx-auto max-w-6xl">
+    <motion className="mb-14 text-center px-4 container mx-auto max-w-6xl">
       <motion.h2
         initial={{ y: 15, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -50,7 +50,7 @@ export default function page() {
           />
         ))}
       </motion.div>
-    </motion.section>
+    </motion>
   );
 }
 
