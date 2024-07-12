@@ -78,7 +78,7 @@ function GridItem({
     <motion.div
       variants={itemVariants}
       style={{ background: `${bgColor}` }}
-      className={`rounded-lg h-full shadow-sm sm:shadow-lg flex flex-col items-center overflow-hidden py-3 px-1`}
+      className={`rounded-xl h-full shadow-sm sm:shadow-lg flex flex-col items-center overflow-hidden py-3 px-1`}
     >
       <img src={image} alt={title} width="143px" />
       <h4
