@@ -19,18 +19,18 @@ const itemVariants = {
 
 export default function page() {
   return (
-    <motion.section
-      initial={{ y: 10, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        duration: 0.2,
-        ease: "easeInOut"
-      }}
-      className="mb-14 text-center px-4 container mx-auto max-w-6xl"
-    >
-      <h2 className="text-[#00203F] font-[600] text-4xl tracking-[1.2px] leading-snug">
+    <motion.section className="mb-14 text-center px-4 container mx-auto max-w-6xl">
+      <motion.h2
+        initial={{ y: 15, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.45,
+          ease: "easeInOut",
+        }}
+        className="text-[#00203F] font-[600] text-4xl tracking-[1.2px] leading-snug"
+      >
         Medicines, Cars, Dining, Electronics Your All-in-One Solution!
-      </h2>
+      </motion.h2>
       <motion.div
         initial="hidden"
         animate="visible"
